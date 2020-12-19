@@ -1,0 +1,31 @@
+body{
+    background-image: url(../../img/login.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position:auto;
+}
+#message{
+	background-color: rgb(255, 254, 200);
+	border-radius: 13px;
+	text-align:center;
+	margin:0px auto;
+	width:500px;
+	height:500px;
+}
+
+#message h4{
+	padding-top: 20px;
+	color: #000000;
+}
+
+#message .input-box{
+	margin-top: 30px;
+}
+#message .input-box input{
+	border: none;
+	background: none;
+	border-bottom: #000000 2px solid;
+	padding: 5px 10px;
+	outline: none;
+	color: #000000;
+}

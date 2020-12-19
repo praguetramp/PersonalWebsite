@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="../../css/font-awesome.min.css">
+    <link rel="stylesheet" href="../../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../css/main.css">
+    <link rel="stylesheet" type="text/css" href="../admin.css">
+    <link rel="stylesheet" href="../qq/qq.css">
+    <title>密码重置</title>
+    
+    <style>
+        body{
+            background-position: auto;
+            background-repeat: no-repeat;
+            background-image: url(../../img/moutain.png);
+            background-size: 100%;
+        }
+        footer{
+            width:100%;
+            height:100px;
+            position: absolute;
+            bottom: 0px;
+            left: 0px;
+        }
+
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo text-center">
+                <img src="../../img/music2.png">
+                <span><font size ="8">Praguetramp</font></span>
+            </div>
+            <div class="head-bottom">
+                <div class="row">
+                    <div class="col-md-6 col-sm-5 hidden-xs">
+                        <strong><font color="darkblue" size="5">Live more like yourself</font></strong> 
+                    </div>
+                    <div class="col-md-6 col-sm-6 col-sm-12 ">
+                        <div class="text-right homepage">
+                            <a  href="../admin.html">我的主页</a>
+                            <a class="exit" onclick='logout()' href="../../home.html">退出</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr> 
+    </header>
+
+    <div id ="login-box">
+        <form action ="safety.php" method="POST" >
+            <br><br>
+            <div class="input-box">
+                <font size="4">&nbsp;&nbsp;&nbsp;账号</font>
+                <input type="text" name="uno" placeholder="账号">
+            </div>
+            <br>
+            <div class="input-box">
+                <font size="4">&nbsp;&nbsp;&nbsp;原密码</font>
+                <input type="password" name ="oldpassword" placeholder="原密码">
+            </div>
+            <br>
+            <div class="input-box">
+                <font size="4">&nbsp;&nbsp;&nbsp;新密码</font>
+                <input type="password" name ="newpassword" placeholder="新密码">
+            </div>
+            <br>
+            <div class="input-box">
+                <font size="4">&nbsp;&nbsp;&nbsp;确认密码</font>
+                <input type="password" name ="assertpassword" placeholder="确认密码">
+            </div>
+            <br>
+            <input style=" cursor: pointer; background:url(../../img/tijiao.png); background-size: 30%;background-position: center; width: 100px;height: 30px;border: 0px; font-size: 15px;background-repeat: no-repeat; background-color: rgb(255, 255, 255);"type="submit"  name="提交" value="&nbsp">
+
+        </form>
+
+    </div>
+    <!--密码确认模块-->
+	<script type="text/javascript">
+		function alter() {
+			
+			var username=document.getElementById("uno").value;
+			var oldpassword=document.getElementById("oldpassword").value;
+			var newpassword=document.getElementById("newpassword").value;
+			var assertpassword=document.getElementById("assertpassword").value;
+			var regex=/^[/s]+$/;
+			if(regex.test(username)||username.length==0){
+				alert("用户名格式不对");
+				return false;
+			}
+			if(regex.test(oldpassword)||oldpassword.length==0){
+				alert("密码格式不对");
+				return false;
+			}
+			if(regex.test(newpassword)||newpassword.length==0) {
+				alert("新密码格式不对");
+				return false;
+			}
+			if (assertpassword != newpassword||assertpassword==0) {
+				alert("两次密码输入不一致");
+				return false;
+			}
+			return true;
+ 
+		}
+	</script> 
+    <hr>
+    <footer >
+        <div class="text-reght myfont" style="color:  rgb(12, 234, 241);text-align: center;">
+            <dl>
+                <dd>Copyright © 2020 Praguetramp/2018211643. All Rights Reserved</dd>
+
+                <div id="datetime">
+                    <script>
+                        setInterval("document.getElementById('datetime').innerHTML=new Date().toLocaleString();", 1000);
+                    </script>
+            </dl>
+        </div>
+    </footer>
+
+
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>admin</title>
+    <link rel="stylesheet" type="text/css" href="../css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" type="text/css" href="admin.css">
+    <style>
+
+     body{
+         background-position: auto;
+         background-repeat: no-repeat;
+         background-image: url(../img/moutain.png);
+         background-size: 100%;
+     }
+    </style>
+</head>
+<body>
+    <div id="box">
+        <header class="header">
+            <div class="container">
+                <div class="logo text-center">
+                    <img src="../img/music2.png">
+                    <span>Praguetramp</span>
+                </div>
+                <div class="head-bottom">
+                    <div class="row">
+                        <div class="col-md-6 col-sm-5 hidden-xs">
+                            <strong><font color="darkblue">Live more like yourself</font></strong> 
+                        </div>
+                        <div class="col-md-6 col-sm-6 col-sm-12 ">
+                            <div class="text-right homepage">
+                                <a class="exit" onclick='logout()' href="../home.html">退出</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+        </header>
+
+        <div class="container">
+    	<div class="row">
+    		<div class="col-md-12">
+    			<ul class="sortlist">
+                    <li class="bg"><a href="./dairy/dairy.html">写日记</a></li>
+                    <li class="bg"><a href="./info/info.html">个人信息</a></li>
+                    <li><a href="./qq/qq.html">QQ好友</a></li>
+                    <li><a href="./weixin/wechat.html">微信好友</a></li>
+    				<li><a href="./favorsite/favor.html">网站收藏</a></li>
+                    <li><a href="./safty/safety.html">账号安全</a></li>
+                </ul>
+            </div>
+        </div>
+
+
+        <hr>
+        <footer class="container">
+            <div class="text-reght myfont" style="color:  rgb(12, 234, 241);text-align: center;">
+                <dl>
+                    <dd>Copyright © 2020 Praguetramp/2018211643. All Rights Reserved</dd>
+
+                    <div id="datetime">
+                        <script>
+                            setInterval("document.getElementById('datetime').innerHTML=new Date().toLocaleString();", 1000);
+                        </script>
+                </dl>
+            </div>
+        </footer>
+    </div>
+</body>  
+</html>

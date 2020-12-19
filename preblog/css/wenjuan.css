@@ -1,0 +1,27 @@
+h1{
+    padding-top: 20px;
+    margin: 10px;
+    text-align: center;
+    color: orange;
+}
+hr{
+    width: 600px;
+    size: 10px;
+    height:3px;
+    background-color: orange;
+    border: 0;
+}
+form{
+    height: 800px;
+    width:1000px;
+    box-shadow: 10px 10px 15px black;
+    background-color: antiquewhite;
+    margin-left: 400px;
+}
+ol{
+    margin-left: 80px;
+}
+li{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}

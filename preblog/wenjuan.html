@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./css/wenjuan.css">
+    <title>问卷调查表</title>
+
+    <style>
+        body{
+            background-position: auto;
+            background-repeat: no-repeat;
+            background-image: url(../img/cool1.jpg);
+            background-size: 100%;
+        }
+        footer{
+            width:100%;
+            height:100px;
+            bottom: 0px;
+            left: 0px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <form action="wenjuan.php" method="POST" enctype="multipart/form-data">
+        <h1>网页体验问卷调查</h1>
+        <hr>
+        <div>
+            <ol>
+                <li>你的姓名</li>
+                <input type="text" name="q10"></input>
+                <li>你的性别(单选)</li>
+                <input type="radio" name="q1"required value="男">男
+                <input type="radio" name="q1"required value="女">女
+                <li>你的教育程度(单选)</li>
+                <input type="radio" name="q2" required value="高中及以下">高中及以下
+                <input type="radio" name="q2" required value="大专">大专
+                <input type="radio" name="q2" required value="本科">本科
+                <input type="radio" name="q2" required value="硕士研究生">硕士研究生
+                <input type="radio" name="q2" required value="博士及以上">博士及以上
+                <li>你的年龄段是(单选)</li>
+                <input type="radio" name="q3" required value="18岁以下">18岁以下
+                <input type="radio" name="q3" required value="18-25岁">18-25岁
+                <input type="radio" name="q3" required value="26-30岁">26-30岁
+                <input type="radio" name="q3" required value="31-35岁">31-35岁
+                <input type="radio" name="q3" required value="35岁以上">35岁以上
+                <li>你是否有编程基础(单选)</li>
+                <input type="radio" name="q4" required value="根本没有">根本没有
+                <input type="radio" name="q4" required value="有一点点">有一点点
+                <input type="radio" name="q4" required value="熟悉">熟悉
+                <input type="radio" name="q4" required value="专业">专业
+                <li>你对本网站的关注点在(可多选)</li>
+                <input type="checkbox" name="q5"  value="技术" >技术
+                <input type="checkbox" name="q5" value="样式" >样式
+                <input type="checkbox" name="q5"  value="内容">内容
+                <input type="checkbox" name="q5"  value="整体感">整体感
+                <input type="checkbox" name="q5" value="其他" >其他
+                <li>你觉得哪些内容做的更好(可多选)</li>
+                <input type="checkbox" name="q6"  value="主题不够明确">主题不够明确
+                <input type="checkbox" name="q6"  value="排版问题">排版问题
+                <input type="checkbox" name="q6"  value="内容质量">内容质量
+                <input type="checkbox" name="q6"  value="入口不清楚">入口不清楚
+                <input type="checkbox" name="q6" value="其他" >其他
+                <li>你在该网站获得的帮助有(可多选)</li>
+                <input type="checkbox" name="q7"  value="学习技术">学习技术
+                <input type="checkbox" name="q7"  value="对比一下">对比一下
+                <input type="checkbox" name="q7"  value="使用里面的资源">使用里面的资源
+                <input type="checkbox" name="q7"  value="日常逛圈">日常逛圈
+                <input type="checkbox" name="q7"  value="其他">其他
+                <li>你的综合建议</li>
+                <input type="text" name="q8" placeholder="Suggestion"></input>
+                <li>你的联系方式(自愿填写，不会泄露你的任何信息！)</li>
+                <input type="tel" name="q9" placeholder="Phone number"></input>
+                <br><br>
+                <p style="text-align:center">
+                <input 
+                style=" cursor: pointer;  
+                background-size: 30%;background-position: center; 
+                width: 200px;height: 30px;border: 0px; 
+                font-size: 15px;background-repeat: no-repeat; 
+                "
+                type="submit" placeholder="submit"/></p>
+            </ol>
+        </div>
+    </form>
+
+
+    <footer >
+        <div class="text-reght myfont" style="color:  rgb(12, 234, 241);text-align: center;">
+            <dl>
+                <dd>Copyright © 2020 Praguetramp/2018211643. All Rights Reserved</dd>
+
+                <div id="datetime">
+                    <script>
+                        setInterval("document.getElementById('datetime').innerHTML=new Date().toLocaleString();", 1000);
+                    </script>
+            </dl>
+        </div>
+    </footer>
+
+</body>
+</html>

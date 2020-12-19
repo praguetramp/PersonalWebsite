@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>注册页面</title>
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../admin/iconfont.css">
+    <link rel="stylesheet" href="../register/zhuce.css">
+    <link rel="stylesheet" href="../css/iconfont/iconfont.css">
+    <style>
+        body {
+            background-color: rgb(255, 255, 255);
+        }
+    </style>
+</head>
+
+<body>
+
+    <p align="center"><font size="8" color="white">Prague    Tramp</font></p>
+    <p align="center"><font size="6"color="white">^_^welcome to this space^_^</font></p>
+    <p align="center"><font size="4"color="white">make your special notes</font></p>
+    <div id="login-box">
+        <h1>Register</h1>
+        <form  action="register.php" method ="POST">
+            <div class="input-box">
+                <i  class ="iconfont">&#xe609;</i>
+            <input name ="uno" type="text" placeholder="user ID">
+            </div>
+            <div class="input-box">
+                <i  class ="iconfont">&#xe604;</i>
+            <input name ="uname"type="text" placeholder="user name">
+             </div>
+             <div class="input-box">
+                <i  class ="iconfont">&#xe61d;</i>
+            <input name ="usex" type="text" placeholder="user sex">
+            </div>
+            <div class="input-box">
+                <i  class ="iconfont">&#xe605;</i>
+            <input name ="upho" type="text" placeholder="user phone num">
+            </div>
+            <div class="input-box">
+                <i  class ="iconfont">&#xe669;</i>
+            <input name ="password" type="password" placeholder="user password">
+            </div>          
+            <br>
+            <input   style=" cursor: pointer; background:url(../img/click.png); background-size: 30%;background-position: center; width: 100px;height: 30px;border: 0px; font-size: 15px;background-repeat: no-repeat; background-color: rgb(255, 255, 255);"type="submit"  name="提交" value="&nbsp">
+            <br>
+           <p align="center"> <a href="../login/denglu.html"> You have ? Sign in</a></p>
+        </div>
+
+        </form> 
+
+
+    </div>
+
+
+    <footer class="container">
+        <div class="text-reght myfont" style="color:  rgb(12, 234, 241);text-align: center;">
+            <dl>
+                <dd>Copyright © 2020 Praguetramp/2018211643. All Rights Reserved</dd>
+
+                <div id="datetime">
+                    <script>
+                        setInterval("document.getElementById('datetime').innerHTML=new Date().toLocaleString();", 1000);
+                    </script>
+            </dl>
+        </div>
+    </footer>
+</body>
+
+</html>

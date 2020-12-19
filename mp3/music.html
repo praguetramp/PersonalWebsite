@@ -1,0 +1,25 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>连续播放音乐</title>
+	</head>
+	<body>
+		<!--添加音频播放，设置为自动播放,并隐藏播放控件的显示-->
+		<audio id="touchstart" controls="" autoplay="true" name="media" loop="true"hidden="true">
+            <source src="./Bandari-anni.flac" type="audio/mpeg">
+        </audio>
+        <!--谷歌浏览器不能自动播放  实现点击页面任何位置播放-->
+        <script>
+            function toggleSound() {
+                var music = document.getElementById("touchstart"); 
+                if (music.paused) { 
+                    music.paused=false;
+                    music.play(); 
+                }  
+            }
+            setInterval("toggleSound()",1);
+        </script>
+	</body>
+</html>
