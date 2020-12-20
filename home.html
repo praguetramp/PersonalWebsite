@@ -32,6 +32,14 @@
     <script src='js/util.js'></script>
     <script src='js/search.js'></script>
     <style>
+        body{
+            background-color: aliceblue;
+            color: rgba(24, 16, 16, 0.904);
+        }
+        .dark-mode{
+            background-color: rgba(24, 16, 16, 0.904);
+            color: aliceblue;
+        }
         .round-icon{
         width: 60px;
         height: 60px;
@@ -111,7 +119,14 @@
                            <br><br>
                             <a class="a-btn" href="./login/denglu.html" data-toggle="modal" class="sign-in"><u>登录</u></a>
                             <a class="a-btn" href="./register/zhuce.html" data-toggle="modal" class="sign-up"><u>注册</u></a>
-                            
+                            <!--切换夜间模式-->
+                            <button onclick="darkmode()">夜间模式</button>
+                            <script>
+                                function darkmode(){
+                                    var ele=document.body;
+                                    ele.classList.toggle("dark-mode");
+                                }
+                            </script> 
                         
                         </div>
                     </div>
