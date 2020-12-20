@@ -18,6 +18,16 @@
       <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
       <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
       <![endif]-->
+      <style>
+      body{
+	      background-color: aliceblue;
+              color: rgba(24, 16, 16, 0.904);
+	 }
+      .dark-mode{
+	      background-color: rgba(24, 16, 16, 0.904);
+              color: aliceblue;
+	 }
+      </style>
 </head>
 
 <body>
@@ -118,6 +128,14 @@
 	<div class="container div_divider">
 		<!-- 分割线 -->
 		<hr class="hr_1"><p style="font-size: 15px "><strong>自律，自行，自信</strong></p>
+		<!--切换夜间模式-->
+		<button onclick="darkmode()">夜间模式</button>
+        	<script>
+           	function darkmode(){
+            		var ele=document.body;
+           		ele.classList.toggle("dark-mode");
+          		}
+        	</script> 
 		<hr class="hr_2">
 		<div class="row">
 			<!-- 文章列表 -->
